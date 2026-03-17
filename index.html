@@ -1,13 +1,1002 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COR-метод — Эмоциональная эволюция</title>
-    <script type="module" crossorigin src="./assets/index-DD6MQYeq.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Cuu-ZfTg.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COR-метод — Практика целостности</title>
+  <meta name="description" content="Научитесь управлять эмоциями за 10 минут в день. COR-метод: практика целостности без годов терапии.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">C</div>
+        <span class="logo-text">COR-метод</span>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav-link">О методе</a>
+        <a href="#benefits" class="nav-link">Преимущества</a>
+        <a href="#products" class="nav-link">Продукты</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      <a href="#cta" class="btn btn-primary">Консультация</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge">
+          <span class="badge-dot"></span>
+          COR-метод: практика целостности
+        </span>
+        <h1 class="hero-title">
+          Научитесь управлять <span class="text-gradient">эмоциями</span> за 10 минут в день
+        </h1>
+        <p class="hero-text">
+          Когда вы знаете, что делать, но эмоции мешают — COR-метод помогает 
+          выйти из захвата и действовать ясно. Без годов терапии до результата.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg" onclick="openModal('consult')">
+            Записаться на консультацию
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <button class="btn btn-outline btn-lg" onclick="openModal('book')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+            Скачать книгу бесплатно
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stats-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <span><strong>2,500+</strong> человек научились управлять своими эмоциями</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="images/author-hero.jpg" alt="Андрей Панфёров — создатель COR-метода">
+          <div class="experience-badge">
+            <div class="badge-number">12</div>
+            <div class="badge-text">
+              <strong>лет практики</strong>
+              <span>с 2013 года</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <h2 class="section-title">Вы узнаёте себя в этих ситуациях?</h2>
+      <p class="section-subtitle">
+        Эти паттерны не случайны — они сигналы от частей вашей личности, которые ждут внимания и принятия
+      </p>
+      
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="card-icon icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3>Знаете, как правильно, но делаете иначе</h3>
+          <p>Внутренний конфликт между тем, что вы хотите, и автоматическими реакциями.</p>
+        </div>
+        
+        <div class="problem-card">
+          <div class="card-icon icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <h3>Страх мешает действовать</h3>
+          <p>Откладывание важных дел, прокрастинация, избегание возможностей.</p>
+        </div>
+        
+        <div class="problem-card">
+          <div class="card-icon icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M16 16s-1.5-2-4-2-4 2-4 2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <h3>Эмоции захватывают, потом жалеете</h3>
+          <p>Вспышки гнева, сожаления после конфликтов, ощущение потери контроля.</p>
+        </div>
+        
+        <div class="problem-card">
+          <div class="card-icon icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Прокрастинация из-за перфекционизма</h3>
+          <p>Страх ошибки парализует действия. "Если не идеально — лучше не начинать".</p>
+        </div>
+      </div>
+
+      <div class="false-solutions">
+        <h3>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="15" y1="9" x2="9" y2="15"/>
+            <line x1="9" y1="9" x2="15" y2="15"/>
+          </svg>
+          Ложные решения, которые не работают
+        </h3>
+        <div class="false-grid">
+          <div class="false-item">
+            <span class="false-text">"Само заживёт"</span>
+            <span class="false-desc">Игнорирование проблемы</span>
+          </div>
+          <div class="false-item">
+            <span class="false-text">"Просто настройся позитивно"</span>
+            <span class="false-desc">Подавление эмоций</span>
+          </div>
+          <div class="false-item">
+            <span class="false-text">Таблетки</span>
+            <span class="false-desc">Временное облегчение</span>
+          </div>
+          <div class="false-item">
+            <span class="false-text">Ждать "удобного момента"</span>
+            <span class="false-desc">Бесконечное откладывание</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section class="solution" id="about">
+    <div class="container">
+      <div class="solution-content">
+        <span class="section-badge">Как работает метод</span>
+        <h2 class="section-title">Что такое <span class="text-gradient">COR-метод?</span></h2>
+        <div class="solution-text">
+          <p><strong>COR (Когнитивная Оперативная Реинтеграция)</strong> — это метод быстрого восстановления целостности сознания через прямой контакт с эмоциями.</p>
+          <p>Метод учит распознавать активную субличность, выходить из отождествления с ней и давать ей безопасное поддерживающее поле через генерацию безусловной любви.</p>
+        </div>
+        <div class="solution-quote">
+          <p>"COR-метод — это искусство занимать 'глаз' эмоциональной бури. Не подавление эмоций, не анализ, не 'перетерпеть' — а безопасное проживание через безусловную любовь."</p>
+        </div>
+        <div class="solution-result">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3l1.912 5.813a2 2 0 001.272 1.272L21 12l-5.813 1.912a2 2 0 00-1.272 1.272L12 21l-1.912-5.813a2 2 0 00-1.272-1.272L3 12l5.813-1.912a2 2 0 001.272-1.272L12 3z"/>
+          </svg>
+          <span>Результат с первой интеграции</span>
+        </div>
+      </div>
+      
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon icon-blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-number">01</span>
+            <h3>Наблюдение</h3>
+            <p>Увидеть субличность со стороны. Разотождествиться с тем, кто переживает эмоцию.</p>
+          </div>
+        </div>
+        
+        <div class="step-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon icon-rose">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-number">02</span>
+            <h3>Безусловная любовь</h3>
+            <p>Создать поле принятия. Транслировать любовь к части себя, которая страдает.</p>
+          </div>
+        </div>
+        
+        <div class="step-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon icon-amber">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-number">03</span>
+            <h3>Определение эмоции</h3>
+            <p>Распознать базовое чувство. Увидеть, что чувствует субличность прямо сейчас.</p>
+          </div>
+        </div>
+        
+        <div class="step-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        
+        <div class="step">
+          <div class="step-icon icon-teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3l1.912 5.813a2 2 0 001.272 1.272L21 12l-5.813 1.912a2 2 0 00-1.272 1.272L12 21l-1.912-5.813a2 2 0 00-1.272-1.272L3 12l5.813-1.912a2 2 0 001.272-1.272L12 3z"/>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-number">04</span>
+            <h3>Интеграция</h3>
+            <p>Позволить эмоции трансформироваться. Субличность находит решение сама.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <h2 class="section-title">Почему COR работает, когда <span class="text-gradient">другие методы не помогли</span></h2>
+      <p class="section-subtitle">
+        COR-метод отличается от терапии, коучинга и медитаций — он даёт практический навык работы с эмоциями здесь и сейчас
+      </p>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+              <polyline points="17 11 19 13 23 9"/>
+            </svg>
+          </div>
+          <h3>Автономность</h3>
+          <p>Не нужен психолог постоянно. Метод становится внутренним навыком, доступным в любой момент.</p>
+        </div>
+        
+        <div class="benefit-card highlight">
+          <div class="benefit-badge">Ключевое</div>
+          <div class="benefit-icon icon-white">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Скорость</h3>
+          <p>Результат сразу в первой практике. Не нужно ждать месяцы, чтобы увидеть изменения.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Безопасность</h3>
+          <p>Мягкий подход без принудительного погружения в травму. Вы контролируете процесс.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3>Универсальность</h3>
+          <p>Работает со всеми эмоциями: страх, гнев, вина, стыд, печаль, презрение.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <h3>Научность + опыт</h3>
+          <p>Нейробиологическая база (амигдала, префронтальная кора, окситоцин) + тысячи интеграций.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3l1.912 5.813a2 2 0 001.272 1.272L21 12l-5.813 1.912a2 2 0 00-1.272 1.272L12 21l-1.912-5.813a2 2 0 00-1.272-1.272L3 12l5.813-1.912a2 2 0 001.272-1.272L12 3z"/>
+            </svg>
+          </div>
+          <h3>Не эзотерика</h3>
+          <p>Без чакр, кармы, мистики — работа с реальными механизмами психики и нервной системы.</p>
+        </div>
+      </div>
+      
+      <p class="benefits-note">
+        <strong>Важно:</strong> COR не заменяет профессиональную помощь при диагностированных психических расстройствах
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">Выберите свой <span class="text-gradient">путь</span></h2>
+      
+      <div class="products-notice">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <p><strong>Важно:</strong> Мы не делаем "бесплатных" вебинаров, чтобы заманить и продать. Всё есть в книге. Вы платите только за время COR-архитектора.</p>
+      </div>
+      
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-header">
+            <div class="product-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="product-type">Книга</span>
+              <h3>COR-метод: практика целостности</h3>
+            </div>
+          </div>
+          <p class="product-desc">Освойте метод самостоятельно с помощью подробного руководства</p>
+          <div class="product-price">
+            <span class="price-free">Бесплатно</span>
+            <span class="price-note">PDF-версия</span>
+          </div>
+          <ul class="product-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Полное руководство по методу</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Базовые инструкции и примеры</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Доступ к обновлениям</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Самостоятельная практика</li>
+          </ul>
+          <button class="btn btn-outline btn-full" onclick="openModal('book')">
+            Скачать книгу
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="product-card featured">
+          <div class="product-badge">Рекомендуем</div>
+          <div class="product-header">
+            <div class="product-icon icon-white">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <span class="product-type">Групповое обучение</span>
+              <h3>Онлайн-группы практиков COR</h3>
+            </div>
+          </div>
+          <p class="product-desc">Марафон "108 шагов" для дисциплины освоения метода "как дыхание"</p>
+          <div class="product-price">
+            <span class="price">от 15 000 ₽</span>
+            <span class="price-note">за марафон</span>
+          </div>
+          <ul class="product-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Марафон "108 шагов"</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Групповые практики</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Поддержка сообщества</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Обратная связь от архитекторов</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Рекомендуем для дисциплины</li>
+          </ul>
+          <button class="btn btn-primary btn-full" onclick="openModal('group')">
+            Узнать подробнее
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-header">
+            <div class="product-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div>
+              <span class="product-type">Индивидуально</span>
+              <h3>Сопровождение COR-архитектора</h3>
+            </div>
+          </div>
+          <p class="product-desc">Персональные сессии для ускоренного освоения метода</p>
+          <div class="product-price">
+            <span class="price">от 8 000 ₽</span>
+            <span class="price-note">за сессию</span>
+          </div>
+          <ul class="product-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Персональные сессии</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Индивидуальная обратная связь</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Работа с вашими темами</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Инициация метода</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Рекомендуем для начала</li>
+          </ul>
+          <button class="btn btn-outline btn-full" onclick="openModal('individual')">
+            Записаться
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <p class="products-note">Все продукты включают доступ к материалам и поддержку в процессе обучения</p>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <div class="stat-number">12+</div>
+          <div class="stat-label">лет практики</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+          </div>
+          <div class="stat-number">2,500+</div>
+          <div class="stat-label">проведённых интеграций</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="stat-number">500+</div>
+          <div class="stat-label">обученных людей</div>
+        </div>
+      </div>
+      
+      <h2 class="section-title">Истории <span class="text-gradient">трансформации</span></h2>
+      <p class="section-subtitle">Реальные результаты практиков COR-метода</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3"/>
+          </svg>
+          <div class="testimonial-content">
+            <div class="testimonial-section">
+              <span class="section-label was">Было:</span>
+              <p>Страх сцены мешал выступать, отказывалась от возможностей</p>
+            </div>
+            <div class="testimonial-section">
+              <span class="section-label did">Сделали:</span>
+              <p>3 интеграции страха под руководством COR-архитектора</p>
+            </div>
+            <div class="testimonial-section result">
+              <span class="section-label became">Стало:</span>
+              <p>Выступаю спокойно, получаю удовольствие от процесса. Недавно провела презентацию для 200 человек.</p>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <strong>Елена</strong>, 34 года
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3"/>
+          </svg>
+          <div class="testimonial-content">
+            <div class="testimonial-section">
+              <span class="section-label was">Было:</span>
+              <p>Прокрастинация, не мог начать важные проекты месяцами</p>
+            </div>
+            <div class="testimonial-section">
+              <span class="section-label did">Сделали:</span>
+              <p>Интеграция перфекционизма и страха ошибки</p>
+            </div>
+            <div class="testimonial-section result">
+              <span class="section-label became">Стало:</span>
+              <p>Действую из интереса, проекты запущены. Уже два завершил за последние три месяца.</p>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <strong>Михаил</strong>, 41 год
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3"/>
+          </svg>
+          <div class="testimonial-content">
+            <div class="testimonial-section">
+              <span class="section-label was">Было:</span>
+              <p>Внутренний критик, самообесценивание, сравнение с другими</p>
+            </div>
+            <div class="testimonial-section">
+              <span class="section-label did">Сделали:</span>
+              <p>Работа с субличностью критика через безусловную любовь</p>
+            </div>
+            <div class="testimonial-section result">
+              <span class="section-label became">Стало:</span>
+              <p>Принимаю себя, делаю больше с удовольствием. Перестала доказывать свою ценность.</p>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <strong>Анна</strong>, 28 лет
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUALIFICATION ===== -->
+  <section class="qualification" id="qualification">
+    <div class="container">
+      <h2 class="section-title">Этот метод <span class="text-gradient">для вас?</span></h2>
+      <p class="section-subtitle">Честный фильтр: кому подойдёт COR-метод, а кому нет</p>
+      
+      <div class="qualification-grid">
+        <div class="qualification-card good">
+          <div class="qualification-header">
+            <div class="qualification-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="8.5" cy="7" r="4"/>
+                <polyline points="17 11 19 13 23 9"/>
+              </svg>
+            </div>
+            <h3>Подходит</h3>
+          </div>
+          <ul class="qualification-list">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Готовность взять ответственность за своё состояние</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Дисциплина 10 минут в день на практику</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Психологически взрослые люди</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Хотите видеть измеримые результаты</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Готовы практиковать, а не только читать</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Устали от методов с "вау-эффектом" без результата</li>
+          </ul>
+        </div>
+        
+        <div class="qualification-card bad">
+          <div class="qualification-header">
+            <div class="qualification-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3>Не подходит</h3>
+          </div>
+          <ul class="qualification-list">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Диагностированные психические расстройства (без сопровождения)</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Ищущие "волшебную таблетку" без усилий</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Не готовые практиковать, только читать</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Ожидающие быстрый результат без работы</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Не готовые взять ответственность за своё состояние</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="qualification-warning">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        <div>
+          <strong>Важное уточнение</strong>
+          <p>При диагностированных психических расстройствах COR-метод может использоваться <strong>только в сопровождении квалифицированного специалиста</strong>. Метод не заменяет психотерапию, но может быть мощным дополнением.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUTHOR ===== -->
+  <section class="author" id="author">
+    <div class="container">
+      <div class="author-image">
+        <img src="images/author-about.jpg" alt="Андрей Панфёров — создатель COR-метода">
+        <div class="author-badges">
+          <div class="author-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <div>
+              <span class="badge-label">Опыт</span>
+              <span class="badge-value">12+ лет</span>
+            </div>
+          </div>
+          <div class="author-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+            <div>
+              <span class="badge-label">Интеграций</span>
+              <span class="badge-value">2500+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="author-content">
+        <span class="section-badge">Об авторе</span>
+        <h2 class="section-title">Андрей Панфёров</h2>
+        <p class="author-role">Создатель COR-метода</p>
+        
+        <div class="author-text">
+          <p>Практик с 12-летним опытом. Прошёл путь от личных кризисов через десятки практик саморазвития до создания COR-метода — системы, которая работает со всеми эмоциями без исключения.</p>
+          <p>COR-метод родился из наблюдений за тем, что большинство подходов дают либо теорию без практики, либо практику без объяснений. Метод объединяет нейробиологию, феноменологию и тысячи часов практической работы.</p>
+        </div>
+        
+        <div class="author-quote">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3"/>
+          </svg>
+          <blockquote>
+            "Практикой проще заниматься, чем читать о ней. Сначала я использовал метод, чтобы решать проблемы. Затем — чтобы достигать целей. Затем — как естественное функционирование сознания."
+          </blockquote>
+          <div class="quote-source">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+            <span>Философия COR-метода</span>
+          </div>
+        </div>
+        
+        <div class="author-example">
+          <strong>Пример из практики автора:</strong>
+          <p>Собственная интеграция старости — работа с экзистенциальным страхом смерти, "нерешаемыми" проблемами и принятием неизбежного. <a href="#" onclick="openModal('book'); return false;">Всё это в книге.</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Частые <span class="text-gradient">вопросы</span></h2>
+      <p class="section-subtitle">Ответы на самые популярные вопросы о COR-методе</p>
+      
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Это не очередная психология?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>От терапии:</strong> COR — это практический навык, не годы анализа. Вы работаете с эмоциями здесь и сейчас, а не исследуете прошлое.</p>
+            <p><strong>От коучинга:</strong> COR не даёт готовых решений. Метод помогает найти ответы внутри себя через проживание эмоций.</p>
+            <p><strong>От медитации:</strong> COR — активная работа с конкретными эмоциями, а не пассивное наблюдение. Результат измерим с первой практики.</p>
+            <p>COR объединяет лучшее: нейробиологическую базу, феноменологический подход и практическую эффективность.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Сколько времени занимает?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Простые темы:</strong> 5-10 минут (раздражение, лёгкая тревога, небольшой страх)</p>
+            <p><strong>Средние темы:</strong> 15-25 минут (обида, вина, стыд)</p>
+            <p><strong>Сложные темы:</strong> 20-40 минут (глубокие травмы, экзистенциальные вопросы)</p>
+            <p><strong>Повседневная практика:</strong> 6-30 секунд на бытовые реакции</p>
+            <p>Важно: интеграцию можно поставить на паузу и вернуться к ней позже. Метод адаптируется под ваш ритм жизни.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>А если не получится?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Метод проверен на тысячах интеграций с 2013 года. Но есть важное условие:</p>
+            <p><strong>Требуется точное выполнение.</strong> COR — не "почитай и станет лучше". Это практический навык, который нужно освоить.</p>
+            <p><strong>Гарантия:</strong> Если после первой практики с COR-архитектором вы не почувствуете результата — вернём деньги.</p>
+            <p><strong>Частые причины "не получается":</strong></p>
+            <ul>
+              <li>Отождествление с субличностью (слишком вовлечены в эмоцию)</li>
+              <li>Подмена безусловной любви другими действиями</li>
+              <li>Прерывание интеграции на полпути</li>
+              <li>Ожидание мгновенного результата</li>
+            </ul>
+            <p>Всё это решается с опытом и/или сопровождением.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Можно ли самостоятельно?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Да, книга даёт полную инструкцию.</strong> Многие практики осваивают метод самостоятельно.</p>
+            <p><strong>Но сопровождение ускоряет освоение:</strong></p>
+            <ul>
+              <li>COR-архитектор помогает избежать типичных ошибок</li>
+              <li>Ускоряет понимание метода в 3-5 раз</li>
+              <li>Даёт уверенность, что вы делаете всё правильно</li>
+              <li>Помогает с "трудными" темами</li>
+            </ul>
+            <p><strong>Рекомендация:</strong> Начните с книги. Если через 2-3 недели практики чувствуете, что не хватает поддержки — запишитесь на сессию.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Это безопасно?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>COR — метод мягкий.</strong> Он не включает принудительного погружения в травму, регрессий или "вскрытия" боли.</p>
+            <p><strong>Принцип безопасности:</strong> Вы всегда контролируете процесс. Можно остановить интеграцию в любой момент.</p>
+            <p><strong>Противопоказания:</strong></p>
+            <ul>
+              <li>Диагностированные психические расстройства (без сопровождения специалиста)</li>
+              <li>Тяжёлые психические травмы с выраженными последствиями</li>
+              <li>Состояния с нарушением восприятия реальности</li>
+            </ul>
+            <p><strong>Важно:</strong> При серьёзных психологических состояниях COR не заменяет работу с квалифицированным психотерапевтом, но может быть мощным дополнением.</p>
+            <p><strong>Для новичков:</strong> Начинайте с простых тем. Не берите сразу тяжёлые травмы — дайте психике привыкнуть к методу.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Чем COR отличается от других методов?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>1. Работа через безусловную любовь</strong><br>
+            Не подавление, не анализ, не "перетерпеть" — а принятие и любовь к части себя, которая страдает.</p>
+            <p><strong>2. Разотождествление</strong><br>
+            Вы учитесь видеть эмоцию со стороны, а не быть ею. Это даёт свободу выбора.</p>
+            <p><strong>3. Субличности, не "внутренний ребёнок"</strong><br>
+            Работа с частями личности без психологических конструкций и мистики.</p>
+            <p><strong>4. Результат с первой практики</strong><br>
+            Не нужно ждать месяцы. Изменения заметны сразу.</p>
+            <p><strong>5. Автономность</strong><br>
+            Метод становится вашим внутренним навыком. Не нужен психолог постоянно.</p>
+            <p><strong>6. Универсальность</strong><br>
+            Один метод работает со всеми эмоциями: страх, гнев, вина, стыд, печаль, презрение.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-cta">
+        <p>Остались вопросы?</p>
+        <a href="#cta" class="btn btn-primary">Запишитесь на бесплатную консультацию</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Готовы начать <span class="text-teal">эмоциональную эволюцию?</span></h2>
+        <p>Забронируйте место на бесплатную консультацию</p>
+        
+        <div class="cta-badges">
+          <div class="cta-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <div>
+              <strong>Срочность</strong>
+              <span>Скидка <b>30%</b> на первую сессию при записи до конца недели</span>
+            </div>
+          </div>
+          <div class="cta-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <div>
+              <strong>Гарантия</strong>
+              <span>Если после первой практики нет результата — <b>вернём деньги</b></span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="cta-form" id="ctaForm" onsubmit="submitForm(event, 'final')">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cta-name">Имя</label>
+              <input type="text" id="cta-name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+              <label for="cta-email">Email</label>
+              <input type="email" id="cta-email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cta-phone">Телефон</label>
+              <input type="tel" id="cta-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3l1.912 5.813a2 2 0 001.272 1.272L21 12l-5.813 1.912a2 2 0 00-1.272 1.272L12 21l-1.912-5.813a2 2 0 00-1.272-1.272L3 12l5.813-1.912a2 2 0 001.272-1.272L12 3z"/>
+            </svg>
+            Забронировать место
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+        
+        <div class="trust-badges">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Без спама</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Конфиденциальность</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Можно отписаться в любой момент</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">C</div>
+            <span class="logo-text">COR-метод</span>
+          </a>
+          <p>Практика целостности. Научитесь управлять эмоциями за 10 минут в день — без годов терапии до результата.</p>
+          <div class="footer-contacts">
+            <a href="mailto:info@cor-method.ru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              info@cor-method.ru
+            </a>
+            <a href="tel:+79990000000">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              +7 (999) 000-00-00
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Продукты</h4>
+          <ul>
+            <li><a href="#products">Книга (бесплатно)</a></li>
+            <li><a href="#products">Групповое обучение</a></li>
+            <li><a href="#products">Индивидуальные сессии</a></li>
+            <li><a href="#products">Марафон "108 шагов"</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>О нас</h4>
+          <ul>
+            <li><a href="#author">Об авторе</a></li>
+            <li><a href="#about">COR-метод</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Поддержка</h4>
+          <ul>
+            <li><a href="#faq">Частые вопросы</a></li>
+            <li><a href="#cta">Контакты</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Договор оферты</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 COR-метод. Все права защищены.</p>
+        <p>Сделано с ❤️ для эмоциональной эволюции</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS ===== -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be inserted by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <span class="toast-icon" id="toastIcon">✓</span>
+      <span class="toast-message" id="toastMessage">Сообщение</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
