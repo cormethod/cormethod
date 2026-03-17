@@ -9,7 +9,7 @@
 // ===== КОНФИГУРАЦИЯ =====
 const CONFIG = {
   // ID формы Google Forms (из URL: .../d/e/ВОТ_ЭТОТ_ID/viewform)
-  GOOGLE_FORM_ID: '1FAIpQLSequSuQF1ounTXy8OwBEh3atHSXXY19NWS3ERrcT_Hk1_kImg',
+  GOOGLE_FORM_ID: '1731ohGfbV6A3S6K_aiBY1j-RX-nVmCGK_QfTum_E07s',
   
   // Entry IDs полей формы (как найти: откройте форму → F12 → найдите input с name="entry.XXXXXX")
   // ИЛИ: создайте предзаполненную ссылку и посмотрите числа в URL
