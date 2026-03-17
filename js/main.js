@@ -85,7 +85,7 @@ function openModal(type) {
           </div>
           <div class="form-group">
             <label for="modal-email">Email</label>
-            <input type="email" id="modal-email" name="email" placeholder="your@email.com" required>
+            <input type="email" id="modal-email" name="email" placeholder="your@email.com" required novalidate>
           </div>
           <div class="form-group">
             <label for="modal-phone">Телефон</label>
