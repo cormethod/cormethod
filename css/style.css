@@ -1217,6 +1217,9 @@ section {
 .qualification-warning p {
   color: #92400E;
   font-size: 0.875rem;
+  word-break: normal;        /* ← добавь это */
+  overflow-wrap: break-word; /* ← и это */
+  hyphens: none;             /* ← и это */
 }
 
 /* ===== AUTHOR ===== */
