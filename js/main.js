@@ -18,7 +18,11 @@ const CONFIG = {
     email: 'entry.1045781291',   // ← ЗАМЕНИТЬ на реальный entry ID для поля "Email"
     phone: 'entry.1166974658',   // ← ЗАМЕНИТЬ на реальный entry ID для поля "Телефон"
     commens: 'entry.839337160', // ← ЗАМЕНИТЬ - поле для комментария (опционально)
-  }
+  },
+
+  // ===== ССЫЛКА НА КНИГУ =====
+  // Замените на реальную ссылку на вашу книгу (Google Drive, Dropbox, прямая ссылка и т.д.)
+  BOOK_DOWNLOAD_URL: 'https://disk.yandex.ru/i/86iiXdHE7yFfqw'
 };
 
 // ===== ОТПРАВКА В GOOGLE FORMS =====
@@ -45,6 +49,20 @@ async function submitToGoogleForm(data) {
     console.error('Error submitting to Google Forms:', error);
     return false;
   }
+}
+
+// ===== СКАЧИВАНИЕ КНИГИ =====
+function downloadBook() {
+  // Открываем ссылку на книгу в новой вкладке
+  window.open(CONFIG.BOOK_DOWNLOAD_URL, '_blank');
+  
+  // ИЛИ для прямого скачивания (если сервер поддерживает):
+  // const link = document.createElement('a');
+  // link.href = CONFIG.BOOK_DOWNLOAD_URL;
+  // link.download = 'COR-method-book.pdf'; // имя файла при скачивании
+  // document.body.appendChild(link);
+  // link.click();
+  // document.body.removeChild(link);
 }
 
 // ===== TOAST УВЕДОМЛЕНИЯ =====
@@ -232,24 +250,47 @@ async function submitForm(event, type) {
     const modalBody = document.getElementById('modalBody');
     
     if (type === 'book') {
-      showToast('Спасибо! Проверьте email для получения книги.');
+      showToast('Спасибо! Книга открывается для скачивания...');
+      
+      // Автоматически открываем книгу для скачивания
+      setTimeout(() => {
+        downloadBook();
+      }, 500);
     } else {
       showToast('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
     }
     
     // Если это модалка, показываем успешный экран
     if (modalBody && document.getElementById('modal').classList.contains('active')) {
-      modalBody.innerHTML = `
-        <div class="modal-success">
-          <div class="success-icon">✓</div>
-          <h3>${type === 'book' ? 'Спасибо!' : 'Заявка отправлена!'}</h3>
-          <p>${type === 'book' ? 'Проверьте email для получения книги' : 'Мы свяжемся с вами в ближайшее время'}</p>
-        </div>
-      `;
+      if (type === 'book') {
+        modalBody.innerHTML = `
+          <div class="modal-success">
+            <div class="success-icon">✓</div>
+            <h3>Спасибо!</h3>
+            <p>Книга открывается в новой вкладке для скачивания</p>
+            <button onclick="downloadBook()" class="btn btn-primary btn-full" style="margin-top: 1.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Скачать книгу ещё раз
+            </button>
+          </div>
+        `;
+      } else {
+        modalBody.innerHTML = `
+          <div class="modal-success">
+            <div class="success-icon">✓</div>
+            <h3>Заявка отправлена!</h3>
+            <p>Мы свяжемся с вами в ближайшее время</p>
+          </div>
+        `;
+      }
       
       setTimeout(() => {
         closeModal();
-      }, 2000);
+      }, 3000);
     } else {
       // Если это форма на странице, очищаем её
       form.reset();
@@ -355,3 +396,4 @@ window.closeModal = closeModal;
 window.submitForm = submitForm;
 window.toggleFaq = toggleFaq;
 window.showToast = showToast;
+window.downloadBook = downloadBook;
