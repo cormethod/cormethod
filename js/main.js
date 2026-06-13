@@ -22,7 +22,7 @@ const CONFIG = {
 
   // ===== ССЫЛКА НА КНИГУ =====
   // Замените на реальную ссылку на вашу книгу (Google Drive, Dropbox, прямая ссылка и т.д.)
-  BOOK_DOWNLOAD_URL: 'https://disk.yandex.ru/i/86iiXdHE7yFfqw'
+  BOOK_DOWNLOAD_URL: 'https://github.com/cormethod/cormethod/raw/refs/heads/main/COR-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4.pdf'
 };
 
 // ===== ОТПРАВКА В GOOGLE FORMS =====
